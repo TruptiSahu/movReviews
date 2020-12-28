@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Filson Soft";
+  src: url(FilsonSoft-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Filson Soft";
+  src: url(FilsonSoft-Medium.otf);
+  font-weight: 500;
+}
