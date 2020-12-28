@@ -155,9 +155,9 @@ const getSortedMovies = function (movies, sortArr = 'rating_desc') {
         (sorting === 'desc' && movies[i][sortBy] < movies[j][sortBy]) ||
         (sorting === 'asce' && movies[i][sortBy] > movies[j][sortBy])
       ) {
-        const temp = movies[i];
-        movies[i] = movies[j];
-        movies[j] = temp;
+        // const temp = movies[i];
+        [movies[i], movies[j]] = [movies[j], movies[i]];
+        // movies[j] = temp;
       }
     }
   }
